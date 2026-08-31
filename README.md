@@ -2,6 +2,10 @@
 
 Skill para organizar visualmente workflows do n8n sem mudar a lógica da automação.
 
+## Exemplo visual
+
+![Workflow n8n organizado em seções](assets/workflow-organizado.png)
+
 ## O que ela faz
 
 - Reorganiza nós, espaçamento e ramificações no canvas.
