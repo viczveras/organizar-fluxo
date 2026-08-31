@@ -1,0 +1,4 @@
+interface:
+  display_name: "Organizar Fluxo"
+  short_description: "Organize visual layouts in n8n workflows"
+  default_prompt: "Use $organizar-fluxo para organizar visualmente este workflow n8n."
