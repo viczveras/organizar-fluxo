@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "organizar-fluxo",
+  "description": "Skill para organizar visualmente workflows do n8n sem mudar a lógica da automação.",
+  "owner": {
+    "name": "Victor Véras",
+    "url": "https://github.com/viczveras"
+  },
+  "plugins": [
+    {
+      "name": "organizar-fluxo",
+      "description": "Organiza o canvas de workflows n8n: espaçamento, alinhamento e stick notes por sessão, sem alterar a lógica.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

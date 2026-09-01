@@ -33,9 +33,25 @@ Clone este repositório e deixe a pasta `organizar-fluxo` dentro do diretório d
 
 Depois reinicie ou abra uma nova sessão do Codex. A skill é detectada automaticamente quando a solicitação envolve organização visual de workflows n8n.
 
-### Claude Code
+### Claude Code (marketplace, recomendado)
 
-Copie a pasta `claude-code/organizar-fluxo` para o diretório de skills do Claude Code:
+Dentro do Claude Code, sem sair da sessão:
+
+```text
+/plugin marketplace add viczveras/organizar-fluxo
+/plugin install organizar-fluxo@organizar-fluxo
+```
+
+Não precisa clonar o repositório nem copiar arquivos, e as atualizações chegam por `/plugin update`.
+
+### Claude Code (cópia manual)
+
+Se preferir instalar sem o marketplace, copie a pasta `claude-code/organizar-fluxo` para o diretório de skills do Claude Code:
+
+```bash
+mkdir -p ~/.claude/skills
+cp -r claude-code/organizar-fluxo ~/.claude/skills/
+```
 
 ```text
 ~/.claude/skills/organizar-fluxo/
@@ -43,12 +59,7 @@ Copie a pasta `claude-code/organizar-fluxo` para o diretório de skills do Claud
 
 Para instalar apenas no projeto atual, use `.claude/skills/organizar-fluxo/` dentro do repositório.
 
-```bash
-mkdir -p ~/.claude/skills
-cp -r claude-code/organizar-fluxo ~/.claude/skills/
-```
-
-Abra uma nova sessão do Claude Code. A skill aparece como `organizar-fluxo` e é acionada automaticamente quando o pedido envolve organização visual de workflows n8n; também pode ser chamada com `/organizar-fluxo`.
+Nos dois casos, abra uma nova sessão do Claude Code. A skill aparece como `organizar-fluxo` e é acionada automaticamente quando o pedido envolve organização visual de workflows n8n; também pode ser chamada com `/organizar-fluxo`.
 
 A versão do Claude Code é idêntica à do Codex: mesmo processo, mesmas convenções, mesmo escopo.
 
@@ -59,10 +70,18 @@ organizar-fluxo/
 ├── SKILL.md                        # skill do Codex
 ├── agents/
 │   └── openai.yaml                 # metadados do Codex
+├── .claude-plugin/
+│   ├── marketplace.json            # catálogo do marketplace do Claude Code
+│   └── plugin.json                 # metadados do plugin
+├── skills/
+│   └── organizar-fluxo/
+│       └── SKILL.md                # skill carregada pelo plugin
 └── claude-code/
     └── organizar-fluxo/
-        └── SKILL.md                # skill do Claude Code
+        └── SKILL.md                # mesma skill, para cópia manual
 ```
+
+Os três `SKILL.md` têm o mesmo conteúdo. `skills/` atende a instalação por marketplace e `claude-code/` a cópia manual.
 
 ## Escopo
 
