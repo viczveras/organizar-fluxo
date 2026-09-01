@@ -50,7 +50,7 @@ cp -r claude-code/organizar-fluxo ~/.claude/skills/
 
 Abra uma nova sessão do Claude Code. A skill aparece como `organizar-fluxo` e é acionada automaticamente quando o pedido envolve organização visual de workflows n8n; também pode ser chamada com `/organizar-fluxo`.
 
-A versão do Claude Code tem o mesmo processo e as mesmas convenções da versão do Codex, e inclui o mapeamento das operações para as ferramentas do servidor `n8n-mcp` (`n8n_get_workflow`, `n8n_update_partial_workflow` com `moveNode` e stick notes, validação com `validateOnly` e `n8n_validate_workflow` em perfil `runtime`).
+A versão do Claude Code é idêntica à do Codex: mesmo processo, mesmas convenções, mesmo escopo.
 
 ## Estrutura
 
