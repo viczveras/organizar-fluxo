@@ -21,6 +21,14 @@ Ela não altera conexões, credenciais, prompts, regras de negócio, execução 
 
 Peça ao Codex ou ao Claude Code para **organizar o fluxo**, **ajustar a estrutura visual**, **melhorar o espaçamento**, **organizar o canvas** ou **revisar as stick notes** de um workflow n8n.
 
+## Pré requisitos
+
+A skill precisa de um servidor MCP do n8n conectado ao agente. Sem ele o agente não consegue ler nem gravar o workflow, e a skill não funciona.
+
+Instale e conecte o [n8n-mcp](https://github.com/czlonkowski/n8n-mcp) antes de usar. O agente precisa das ferramentas de leitura da estrutura, de atualização parcial por operações de diff e de validação do workflow.
+
+Também é necessária uma instância n8n acessível, com API habilitada e uma API key válida configurada no MCP.
+
 ## Instalação
 
 ### Codex
