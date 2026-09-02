@@ -1,7 +1,7 @@
 {
   "name": "organizar-fluxo",
   "description": "Organiza visualmente workflows do n8n: ajusta espaçamento, alinhamento e notas de seção sem alterar a lógica.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": {
     "name": "Victor Véras",
     "url": "https://github.com/viczveras"
